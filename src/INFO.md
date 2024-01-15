@@ -1,3 +1,23 @@
+## Communication Interface
+
+The communication protocol is `MODBUS-RTU`.
+
+Factory Modbus ID setting is `01H`
+
+The communication interface is TTL serial port;
+
+The data format is `8,N,1` `(8 data, no parity, one stop bit(s))`
+
+The factory baudrate setting is `115200`
+
+Logic high level is `3.3V`
+
+Interface Connector:
+- VCC: 5V supply 
+- TX: Serial data input (connect it to master’s transmitter output)
+- RX: Serial data output (connect it to master’s receiver input)
+- GND: Ground
+
 ## Function Codes
 
 This machine only supports 0x03, 0x06, 0x10 function codes.
