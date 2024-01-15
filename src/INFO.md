@@ -1,6 +1,29 @@
+## Function Codes
 
-> [!NOTE]
-> Communication example
+This machine only supports 0x03, 0x06, 0x10 function codes.
+
+This means, all mentioned registers are ‘Holding Registers’
+
+| Function code | Definition               | Operation (binary)                                       |
+|---------------|--------------------------|----------------------------------------------------------|
+| 0x03          | Read register data       | Read data from one or more registers                     |
+| 0x06          | Write a single register  | Write a set of binary data to a single register          |
+| 0x10          | Write multiple registers | Write multiple sets of binary data to multiple registers |
+
+## Register Set (Holding Registers)
+
+Rem: Each register consists of 16 bits, transferred as 2 bytes.
+
+| Name   | Description                                 | Bytes | Dec. | Unit | Read and write | Register address |
+|--------|---------------------------------------------|-------|------|------|----------------|------------------|
+| V-SET  | Voltage setting                             | 2     | 2    | V    | R/W            | 0000/H           |
+| I-SET  | Current setting                             | 2     | 2    | A    | R/W            | 0001/H           |
+| VOUT   | Output voltage display value                | 2     | 2    | V    | R              | 0002/H           |
+| IOUT   | Output current display value                | 2     | 2    | A    | R              | 0003/H           |
+| POWER  | Output power display value                  | 2     | 2    | W    | R              | 0004/H           |
+
+
+## Communication example
 
 The host reads the output voltage and output current display values
 
