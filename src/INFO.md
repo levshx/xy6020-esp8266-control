@@ -20,7 +20,7 @@ Rem: Each register consists of 16 bits, transferred as 2 bytes.
 | I-SET  | Current setting                             | 2     | 2    | A    | R/W            | 0001/H           |
 | VOUT   | Output voltage display value                | 2     | 2    | V    | R              | 0002/H           |
 | IOUT   | Output current display value                | 2     | 2    | A    | R              | 0003/H           |
-| POWER  | Output power display value                  | 2     | 2    | W    | R              | 0004/H           |
+| POWER  | Output power display value                  | 2     | 1    | W    | R              | 0004/H           |
 
 
 ## Communication example
