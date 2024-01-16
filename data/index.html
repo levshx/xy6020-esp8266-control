@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Стенд</title>
+    
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="regulator">
+            <div class="reg-info">
+                <h4 class="reg-value">U: <span id="voltage">0.00</span></h4>
+                <h4 class="reg-value">A: <span id="current">0.00</span></h4>
+                <h4 class="reg-value">W: <span id="power">00.0</span></h4>
+            </div>
+            <div class="value-control">
+                <a>Voltage</a>
+                <input type="number" min="0" max="50" step="0.01" value="0.00" />
+                <input type="range" min="0" max="50" step="0.01" value="0.00" id="voltage-setting" />
+            </div>
+
+            <div class="value-control">
+                <a>Current</a>
+                <input type="number" min="0" max="20" step="0.01" value="0.00" />
+                <input type="range" min="0" max="20" step="0.01" value="0.00" id="current-setting" />
+            </div>
+
+            <label for="OnOff1">
+                <input type="checkbox" id="OnOff1" /> On/Off
+            </label>
+        </div>
+        <div class="regulator">
+            <div class="reg-info">
+                <h4 class="reg-value">U: <span id="voltage">0.00</span></h4>
+                <h4 class="reg-value">A: <span id="current">0.00</span></h4>
+                <h4 class="reg-value">W: <span id="power">00.0</span></h4>
+            </div>
+            <div class="value-control">
+                <a>Voltage</a>
+                <input type="number" min="0" max="50" step="0.01" value="0.00" />
+                <input type="range" min="0" max="50" step="0.01" value="0.00" id="voltage-setting" />
+            </div>
+
+            <div class="value-control">
+                <a>Current</a>
+                <input type="number" min="0" max="20" step="0.01" value="0.00" />
+                <input type="range" min="0" max="20" step="0.01" value="0.00" id="current-setting" />
+            </div>
+
+            <label for="OnOff1">
+                <input type="checkbox" id="OnOff1" /> On/Off
+            </label>
+        </div>
+    </div>
+</body>
+
+</html>
