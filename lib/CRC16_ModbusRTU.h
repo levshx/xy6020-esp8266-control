@@ -1,6 +1,7 @@
+#include <Arduino.h>
 
 // Compute the MODBUS RTU CRC
-String ModRTU_CRC(String raw_msg_data) {
+uint16_t ModRTU_CRC(String raw_msg_data) {
   //Calc raw_msg_data length
   byte raw_msg_data_byte[raw_msg_data.length()/2];
   //Convert the raw_msg_data to a byte array raw_msg_data
@@ -41,7 +42,7 @@ String ModRTU_CRC(String raw_msg_data) {
 
   //Invert the byte positions
   crc_string = crc_string.substring(2, 4) + crc_string.substring(0, 2);
-  return crc_string;  
+  return crc;  
 }
 
 //String to byte --> Example: String = "C4" --> byte = {0xC4}
