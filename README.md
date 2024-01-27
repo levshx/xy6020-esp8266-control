@@ -11,7 +11,7 @@ Framework:
 
 
 
-### Communication Interface
+## Communication Interface
 
 The communication protocol is `MODBUS-RTU`.
 
@@ -31,7 +31,7 @@ Interface Connector:
 - RX: Serial data output (connect it to master’s receiver input)
 - GND: Ground
 
-### Function Codes
+## Function Codes
 
 This machine only supports 0x03, 0x06, 0x10 function codes.
 
@@ -43,7 +43,7 @@ This means, all mentioned registers are ‘Holding Registers’
 | 0x06          | Write a single register  | Write a set of binary data to a single register          |
 | 0x10          | Write multiple registers | Write multiple sets of binary data to multiple registers |
 
-### Register Set (Holding Registers)
+## Register Set (Holding Registers)
 
 Rem: Each register consists of 16 bits, transferred as 2 bytes.
 
@@ -56,7 +56,7 @@ Rem: Each register consists of 16 bits, transferred as 2 bytes.
 | POWER  | Output power display value                  | 2     | 1    | W    | R              | 0004/H           |
 
 
-### Communication example
+## Communication example
 
 The host reads the output voltage and output current display values
 
